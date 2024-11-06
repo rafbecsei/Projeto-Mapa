@@ -13,16 +13,16 @@ class LoginScreen extends React.Component {
     super(props);
     this.state = {
       email: '',
-      password: '',
+      senha: '',
     };
   }
 
   handleLogin = async () => {
-    const { email, password } = this.state;
+    const { email, senha } = this.state;
     try {
-      const storedEmail = await AsyncStorage.getItem('email');
-      const storedPassword = await AsyncStorage.getItem('password');
-      if (email === storedEmail && password === storedPassword) {
+      const EmailSalvo = await AsyncStorage.getItem('email');
+      const SenhaSalva = await AsyncStorage.getItem('senha');
+      if (email === EmailSalvo && senha === SenhaSalva) {
         this.props.navigation.navigate('HomeScreen');
       } else {
         alert('E-mail ou senha incorretos');
@@ -38,14 +38,14 @@ class LoginScreen extends React.Component {
         <Text style={styles.title}>Bem-vindo ao Mapa da Faculdade</Text>
         <TextInput
           style={styles.input}
-          placeholder="E-mail"
+          placeholder="Informe seu usuário"
           value={this.state.email}
           onChangeText={(text) => this.setState({ email: text })}
           autoCapitalize="none"
         />
         <TextInput
           style={styles.input}
-          placeholder="Senha"
+          placeholder="Informe sua senha"
           value={this.state.password}
           onChangeText={(text) => this.setState({ password: text })}
           secureTextEntry
@@ -64,15 +64,15 @@ class CadastroScreen extends React.Component {
     super(props);
     this.state = {
       email: '',
-      password: '',
+      senha: '',
     };
   }
 
   handleCadastro = async () => {
-    const { email, password } = this.state;
+    const { email, senha } = this.state;
     try {
       await AsyncStorage.setItem('email', email);
-      await AsyncStorage.setItem('password', password);
+      await AsyncStorage.setItem('senha', senha);
       alert('Cadastro realizado com sucesso!');
       this.props.navigation.navigate('Login');
     } catch (error) {
@@ -86,14 +86,14 @@ class CadastroScreen extends React.Component {
         <Text style={styles.title}>Cadastro</Text>
         <TextInput
           style={styles.input}
-          placeholder="E-mail"
+          placeholder="Informe seu usuário"
           value={this.state.email}
           onChangeText={(text) => this.setState({ email: text })}
           autoCapitalize="none"
         />
         <TextInput
           style={styles.input}
-          placeholder="Senha"
+          placeholder="Informe sua senha"
           value={this.state.password}
           onChangeText={(text) => this.setState({ password: text })}
           secureTextEntry
@@ -108,7 +108,7 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>{"Página Inicial!!!"}</Text>
+        <Text>{"Home"}</Text>
       </View>
     );
   }
