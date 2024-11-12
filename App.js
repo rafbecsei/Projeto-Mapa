@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, Dimensions } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, Dimensions, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ImageZoom from 'react-native-image-pan-zoom';
 import IMGMapa from '/assets/IMGMapaFEI.png';
+import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
 
@@ -46,7 +47,7 @@ class TelaLogin extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Bem-vindo ao Mapa da Faculdade</Text>
+        <Text style={styles.nome}>Bem-vindo ao FEI Maps</Text>
         <TextInput
           style={styles.input}
           placeholder="Informe seu usuário"
@@ -106,7 +107,7 @@ class TelaLogin2 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Bem-vindo ao Mapa da Faculdade</Text>
+        <Text style={styles.nome}>Bem-vindo ao FEI Maps</Text>
         <TextInput
           style={styles.input}
           placeholder="Informe seu usuário"
@@ -317,6 +318,98 @@ class TelaRedefine extends React.Component{
   }
 }
 
+// ============================ Tela de Descrição dos Prédios ==========================
+class TelaDescricao extends React.Component {
+  render() {
+    return (
+      <ScrollView contentContainerStyle={styles.containerDescricao}>
+        <Text style={styles.title}>Prédio A:</Text>
+        <Text style={styles.descricao}> 
+          Reitoria, Superintendência Geral e Administrativa, Setor de Apoio a Eventos e Transporte, Secretaria Geral, Setor de Audiovisual, 
+          Setor de Comunicação e Marketing, Setor de Pessoal, Setor de Recursos Humanos, Biblioteca e Salas de Estudos
+        </Text>
+        <Text style={styles.title}>Prédio B:</Text>
+        <Text style={styles.descricao}> 
+          Coordenadoria Departamental, Salas de Estudos, Posto Bancário, Tesouraria, Setor de Estágios e Empregos, 
+          Centros de Estudos de Alunos, DCE (Diretório Central dos Estudantes), Pastoral,  Assistente Religioso, Salas de Aulas e 
+          Centros e Diretórios Acadêmicos ( Automação e Controle, Engenharia Civil, Engenharia Mecânica, Engenharia Química, Administração, 
+          Engenharia de Produção e Engenharia Elétrica)
+        </Text>
+        <Text style={styles.title}>Prédio C:</Text>
+        <Text style={styles.descricao}> 
+          Praça de Alimentação, Restaurantes, Associação dos Funcionários e Ambulatório Médico
+        </Text>
+        <Text style={styles.title}>Prédio D:</Text>
+        <Text style={styles.descricao}> 
+          Centro de Laboratórios Elétricos, Laboratórios de Física, Laboratórios de Robótica e de Automação e Controle, Salas de Aulas, 
+          Programa de Bolsas de Estudos, Coordenadoria de Relações Internacionais, Secretaria de Iniciação Científica, 
+          CPA - Comissão Própria de Avaliação, Inspetoria e Segurança do Trabalho
+        </Text>
+        <Text style={styles.title}>Prédio E:</Text>
+        <Text style={styles.descricao}> 
+          Abriga o Centro de Laboratórios Mecânicos (CLM) que atende as áreas de Mecânica, Materiais e Têxtil, 
+          Centro de Pesquisas Têxteis (CPT/IPEI) e Laboratório de Ensaios Mecânicos (CPM/IPEI)
+        </Text>
+        <Text style={styles.title}>Prédio F:</Text>
+        <Text style={styles.descricao}> 
+          Laboratório de Engenharia Civil, Setor de Manutenção, Seção de Custos e Patrimônio, Setor de Compras, Suprimentos e Almoxarifado
+        </Text>
+        <Text style={styles.title}>Prédio G:</Text>
+        <Text style={styles.descricao}> 
+          Centro de Laboratórios Químicos (CLQ) que atende as áreas de Materiais, Química e Têxtil
+        </Text>
+        <Text style={styles.title}>Prédio H:</Text>
+        <Text style={styles.descricao}> 
+          Instituto de Pesquisas - IPEI, Laboratórios do Instituto de Pesquisas, Empresa Júnior FEI, Lanchonete e Copiadora
+        </Text>
+        <Text style={styles.title}>Prédio I:</Text>
+        <Text style={styles.descricao}> 
+          Salas de Aulas, Auditório, Laboratórios de Mecânica dos Fluidos e Diretório Acadêmico do Curso de Ciência da Computação (DACC)
+        </Text>
+        <Text style={styles.title}>Prédio J:</Text>
+        <Text style={styles.descricao}> 
+          Salas de Aulas e Auditório
+        </Text>
+        <Text style={styles.title}>Prédio K:</Text>
+        <Text style={styles.descricao}> 
+          Salas de Aulas, Laboratórios de Informática, Laboratórios de Robótica e Inteligência Artificial, Laboratórios de Automação e Controle,
+          Laboratório de Manufatura Digital, Coordenadoria Geral de Informática (CGI), Laboratório de Tecnologia da Informação, 
+          Secretaria da Pós-graduação Stricto Sensu e Chefias do Mestrado e Doutorado
+        </Text>
+        <Text style={styles.title}>Prédio N:</Text>
+        <Text style={styles.descricao}> 
+          Piscina Semiolímpica Coberta, Arquibancada, Vestiário, Salas de Musculação e Artes Marciais, Áreas de Lazer e Sala Multiuso para Alunos
+        </Text>
+        <Text style={styles.title}>Prédio O:</Text>
+        <Text style={styles.descricao}> 
+          Portaria Externa
+        </Text>
+        <Text style={styles.title}>Prédio P:</Text>
+        <Text style={styles.descricao}> 
+          Torre Caixa d’água
+        </Text>
+        <Text style={styles.title}>Prédio R:</Text>
+        <Text style={styles.descricao}> 
+          Capela Santo Inácio de Loyola
+        </Text>
+        <Text style={styles.title}>Prédio S:</Text>
+        <Text style={styles.descricao}> 
+          Ginásio de Esportes, Arquibancada, Quadra Poliesportiva, Vestiário e Sala Administrativa do CVDRL
+        </Text>
+        <Text style={styles.title}>Prédio T:</Text>
+        <Text style={styles.descricao}> 
+          IECAT – Instituto de Especialização em Ciências Administrativas e Tecnológicas (Pós-graduação Latu Sensu), Salas de aula, 
+          Auditório e Inspetoria
+        </Text>
+        <Text style={styles.title}>Prédio U:</Text>
+        <Text style={styles.descricao}> 
+          Quadras poliesportivas e tênis, Campo de Futebol, Campo de Futebol Society, Atletismo: pista área de prova de campo, lançamento de dardo,
+           Vestiário, Sala de Apoio, Depósito de Materiais Esportivos, Torre d’água e Arquibancada
+        </Text>
+      </ScrollView>
+    );
+  }
+}
 
 // ============================ Tela Inicial ==============================
 
@@ -325,12 +418,10 @@ class TelaInicial extends React.Component {
     return (
       <View style={styles.mapaContainer}>
         <ImageZoom
-          
           cropWidth={Dimensions.get('window').width}
           cropHeight={Dimensions.get('window').height}
           imageWidth={Dimensions.get('window').width}
           imageHeight={Dimensions.get('window').width * (600 / 750)}>
-
           <Image source={IMGMapa} style={styles.image} resizeMode="contain"/>
         </ImageZoom>
       </View>
@@ -344,14 +435,18 @@ class App extends React.Component {
   render() {
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Início">
+        <Stack.Navigator initialRouteName="Login">
           <Stack.Screen name="Login" component={TelaLogin} />
           <Stack.Screen name="Cadastro" component={TelaCadastro} />
           <Stack.Screen name="Login " component={TelaLogin2} />
           <Stack.Screen name="Recuperação" component={TelaRecupera}/>
           <Stack.Screen name="Verificação" component={TelaVerifica}/>
           <Stack.Screen name="Redefinição" component={TelaRedefine}/>
-          <Stack.Screen name="Início" component={TelaInicial} />
+          <Stack.Screen name="Início" component={TelaInicial} options={({ navigation }) => ({title: 'Mapa da Faculdade', headerLeft: () => (
+                <TouchableOpacity onPress={() => navigation.navigate('Descrição dos Prédios')}>
+                  <Ionicons name="menu" size={30} color="black" style={{ marginLeft: 15 }} />
+                </TouchableOpacity>),})}/>
+          <Stack.Screen name="Descrição dos Prédios" component={TelaDescricao} />
         </Stack.Navigator>
       </NavigationContainer>
     );
@@ -361,6 +456,13 @@ class App extends React.Component {
 // ============================ Estilos ======================================
 
 const styles = StyleSheet.create({
+  descricao: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
   mapaContainer: {
     flex: 1,
     justifyContent: 'center',
@@ -377,11 +479,23 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#f2f2f2',
   },
+  containerDescricao: {
+    flexGrow: 1, 
+    justifyContent: 'flex-start', 
+    padding: 20,
+    backgroundColor: '#f2f2f2',
+  },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
+  },
+  nome: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 50,
   },
   input: {
     height: 40,
