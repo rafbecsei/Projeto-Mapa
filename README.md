@@ -12,21 +12,21 @@ O FEI Maps é um aplicativo desenvolvido para estudantes e frequentadores da FEI
 
 ## Imagens da Interface
 - Tela de Login
-![IMG_4366](https://github.com/user-attachments/assets/c1df13b2-fe55-46dd-90b0-29c0fd2d8561)
+![IMGLogin](https://github.com/user-attachments/assets/3f5e1536-4f08-4c26-b668-6f30d8cf9615)
 - Tela de Cadastro
-![IMG_4367](https://github.com/user-attachments/assets/c8ef181d-765b-4600-9ed6-2a99866229db)
+![IMGCadastro](https://github.com/user-attachments/assets/84c0ef76-c265-463e-94d5-f5e543974648)
 - Tela de Recuperação de Senha
-![IMG_4370](https://github.com/user-attachments/assets/673ebb49-7d49-4336-8aff-12bcc58aa585)
+![IMGRecuperacao](https://github.com/user-attachments/assets/dff5dbb1-83e4-4fd3-8f56-6acbf453bdbd)
 - Tela de Verificação
-![IMG_4371](https://github.com/user-attachments/assets/b3649990-d80f-4218-bc13-a7fb4f52f4e9)
+![IMGVerificacao](https://github.com/user-attachments/assets/b37bcbd0-f3ea-402c-aeec-2f98dac55383)
 - Tela do Mapa
-![IMG_4372](https://github.com/user-attachments/assets/ce57b4cc-6f9f-471d-89c9-b687d69c1661)
+![IMGMapa](https://github.com/user-attachments/assets/e034eab3-2f33-400c-b3d8-3bf40373a3ce)
 - Tela das Descrições dos Prédios (A até E)
-![IMG_4373](https://github.com/user-attachments/assets/4e57170c-159f-4a39-9f50-22ad328a3f76)
+![IMGDescricao1](https://github.com/user-attachments/assets/6ee75f8a-bc19-474e-a3f2-b2273be66e13)
 - Tela das Descrições dos Prédios (F até N)
-![IMG_4374](https://github.com/user-attachments/assets/39a7771b-babe-42a0-b8f4-758f9a738467)
+![IMGDescricao2](https://github.com/user-attachments/assets/692f0c21-8069-4acf-bd54-db514e0f2a8e)
 - Tela das Descrições dos Prédios (O até U) 
-![IMG_4375](https://github.com/user-attachments/assets/a402f8f9-e02f-4716-ba08-5f04f4ad33c4)
+![IMGDescricao3](https://github.com/user-attachments/assets/9a3c2515-3b1e-4c4e-93ab-b580354de879)
 
 ## Desenvolvedor
 Rafael Iamashita Becsei 
